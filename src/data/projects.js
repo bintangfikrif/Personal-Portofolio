@@ -20,7 +20,7 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "Lucide", "Framer Motion", "Post CSS"],
     category: "Web App",
     githubUrl: "https://github.com/bintangfikrif/Personal-Portofolio",
-    liveUrl: "https://your-ai-chat-demo.vercel.app",
+    liveUrl: "https://bintang-personal-portofolio.vercel.app/",
     featured: true,
     status: "Completed",
     year: "2025"
