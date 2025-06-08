@@ -17,7 +17,6 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection }) =>
   };
 
   const handleDownloadCV = () => {
-    // In a real app, this would download an actual CV file
     const link = document.createElement('a');
     link.href = '/CV_Bintang.pdf';
     link.download = 'CV_Bintang_Fikri_Fauzan.pdf';
@@ -30,7 +29,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection }) =>
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            DevPortfolio
+            Bintang's Portfolio Webpage
           </div>
           
           {/* Desktop Navigation */}
@@ -49,7 +48,6 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection }) =>
               </button>
             ))}
             
-            {/* Download CV Button */}
             <button
               onClick={handleDownloadCV}
               className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg"

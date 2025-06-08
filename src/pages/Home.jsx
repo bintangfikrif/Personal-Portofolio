@@ -7,31 +7,33 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-300 dark:bg-pink-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse animation-delay-4000"></div>
-      </div>
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-300 dark:bg-pink-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 animate-pulse animation-delay-4000"></div>
+        </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-spin-slow">
-                <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                  <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center text-white text-4xl sm:text-5xl font-bold">
-                    BFF
-                  </div>
-                </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            {/* Profile Image */}
+            <div className="mb-8 flex justify-center">
+          <div className="relative">
+            <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+              <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+            <img
+              src="/profile.JPG"
+              alt="Profile"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover"
+            />
               </div>
-              <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 animate-pulse"></div>
             </div>
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-gray-900 animate-pulse"></div>
           </div>
+            </div>
 
-          {/* Greeting */}
+
+            {/* Greeting */}
           <div className="mb-6">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4">
               <span className="inline-block animate-wave">👋</span>
@@ -65,7 +67,7 @@ const Home = () => {
           {/* Tech Stack Pills */}
           <div className="mb-12">
             <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-              {['Python', 'JavaScript', 'React', 'Node.js', 'MongoDB', 'AI/ML'].map((tech, index) => (
+              {['Python', 'JavaScript', 'React', 'C++', 'AI/ML'].map((tech, index) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-300 hover:scale-105"

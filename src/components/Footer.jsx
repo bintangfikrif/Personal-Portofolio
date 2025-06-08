@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Center: Social Links */}
         <div className="flex space-x-4">
           <a
-            href="https://github.com"
+            href="https://github.com/bintangfikrif"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -22,7 +22,7 @@ const Footer = () => {
             <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/bintang-fikri-fauzan-2436751b0/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -31,7 +31,7 @@ const Footer = () => {
             <Linkedin className="w-5 h-5 text-blue-700 dark:text-blue-400" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/bintangfikrif"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -40,7 +40,7 @@ const Footer = () => {
             <Instagram className="w-5 h-5 text-pink-600 dark:text-pink-400" />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:bntngfkr@gmail.com"
             aria-label="Email"
             className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300"
           >
