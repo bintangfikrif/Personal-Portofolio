@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional custom styling */
+/* Custom global styles for your portfolio */
 body {
-  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbars for a cleaner look (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+/* Selection color */
+::selection {
+  background-color: #a5b4fc;
+  color: #1e293b;
+}
+.dark ::selection {
+  background-color: #6366f1;
+  color: #fff;
 }
