@@ -19,8 +19,8 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection }) =>
   const handleDownloadCV = () => {
     // In a real app, this would download an actual CV file
     const link = document.createElement('a');
-    link.href = '#'; // Replace with actual CV file path
-    link.download = 'My_CV.pdf';
+    link.href = '/CV_Bintang.pdf';
+    link.download = 'CV_Bintang_Fikri_Fauzan.pdf';
     link.click();
   };
 

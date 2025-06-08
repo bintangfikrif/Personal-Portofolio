@@ -89,7 +89,7 @@ const About = () => {
               <div className="mt-6 flex flex-wrap gap-4 text-sm">
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
                   <MapPin className="w-4 h-4 mr-2" />
-                  <span>Your City, Country</span>
+                  <span>Bekasi, Indonesia</span>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400">
                   <Calendar className="w-4 h-4 mr-2" />

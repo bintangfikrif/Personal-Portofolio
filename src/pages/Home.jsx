@@ -23,7 +23,7 @@ const Home = () => {
               <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-spin-slow">
                 <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
                   <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center text-white text-4xl sm:text-5xl font-bold">
-                    YN
+                    BFF
                   </div>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const Home = () => {
             </h1>
             <h2 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
               <span className="bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-                Your Name
+                Bintang Fikri Fauzan
               </span>
             </h2>
           </div>
@@ -51,7 +51,7 @@ const Home = () => {
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Code className="w-6 h-6 text-blue-600" />
               <h3 className="text-2xl sm:text-3xl font-semibold text-blue-600 dark:text-blue-400">
-                Full Stack Developer
+                IT Enthusiast & Student
               </h3>
               <Sparkles className="w-6 h-6 text-purple-600" />
             </div>
@@ -96,9 +96,9 @@ const Home = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             {[
-              { icon: Github, href: 'https://github.com', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+              { icon: Github, href: 'https://github.com/bintangfikrif', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/bintang-fikri-fauzan-2436751b0/', label: 'LinkedIn' },
+              { icon: Mail, href: 'mailto:bntngfkr@gmail.com', label: 'Email' }
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
