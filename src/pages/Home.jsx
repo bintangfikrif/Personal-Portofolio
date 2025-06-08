@@ -32,7 +32,6 @@ const Home = () => {
           </div>
             </div>
 
-
             {/* Greeting */}
           <div className="mb-6">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-4">
@@ -53,21 +52,20 @@ const Home = () => {
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Code className="w-6 h-6 text-blue-600" />
               <h3 className="text-2xl sm:text-3xl font-semibold text-blue-600 dark:text-blue-400">
-                IT Enthusiast & Student
+                IT Student & Enthusiast
               </h3>
               <Sparkles className="w-6 h-6 text-purple-600" />
             </div>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
               Passionate about creating innovative web solutions and exploring the frontiers of 
-              <span className="text-blue-600 dark:text-blue-400 font-semibold"> Artificial Intelligence</span>. 
-              I transform ideas into reality through clean, efficient code.
+              <span className="text-blue-600 dark:text-blue-400 font-semibold"> Artificial Intelligence</span>.
             </p>
           </div>
 
           {/* Tech Stack Pills */}
           <div className="mb-12">
             <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-              {['Python', 'JavaScript', 'React', 'C++', 'AI/ML'].map((tech, index) => (
+              {['Python', 'UI/UX', 'React', 'C++', 'AI/ML'].map((tech, index) => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 dark:hover:text-blue-300 transition-all duration-300 hover:scale-105"

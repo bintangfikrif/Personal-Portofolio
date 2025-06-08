@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: Copyright */}
         <div className="text-gray-600 dark:text-gray-400 text-center md:text-left text-sm">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Bintang Fikri Fauzan. All rights reserved.
         </div>
 
         {/* Center: Social Links */}
