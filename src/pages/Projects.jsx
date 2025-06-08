@@ -209,22 +209,6 @@ const Projects = () => {
             </button>
           </div>
         )}
-
-        {/* Call to Action */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Interested in Working Together?</h3>
-            <p className="text-lg mb-6 opacity-90">
-              I'm always open to discussing new projects and opportunities.
-            </p>
-            <button
-              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            >
-              Get In Touch
-            </button>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`
