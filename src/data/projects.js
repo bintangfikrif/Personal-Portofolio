@@ -85,6 +85,32 @@ export const projects = [
     featured: false,
     status: "Completed",
     year: "2024"
+  },
+  {
+    id: 8,
+    title: "Personal Book Management Web",
+    description: "Personal Book Management is a React-based web application design that enables users to log, organize, and track books they own, are currently reading, or plan to buy. The design features a clean and intuitive user interface, leveraging modern capabilities of React for a seamless experience.",
+    image: "project8.png",
+    technologies: ["React", "React Router", "CSS", "Context API"],
+    category: "Web App",
+    githubUrl: "https://github.com/bintangfikrif/pemrograman_web_itera_122140008/tree/main/Bintangfikrifauzan_122140008_pertemuan3",
+    liveUrl: "https://aplikasi-manajemen-buku.vercel.app/",
+    featured: false,
+    status: "Completed",
+    year: "2025"
+  },
+  {
+    id: 9,
+    title: "Student Financial Tracker",
+    description: "Student Financial Tracker is a web application design created to help students manage their personal finances with ease. It allows users to record income and expenses, set monthly budgets, and view financial visualizations through charts to monitor their spending habits.",
+    image: "project9.png",
+    technologies: ["React", "React Router", "CSS", "Local Storage API"],
+    category: "Web App",
+    githubUrl: "https://github.com/bintangfikrif/pemrograman_web_itera_122140008/tree/main/Bintangfikrifauzan_122140008_pertemuan2/tugas",
+    liveUrl: "https://tracker-keuangan.vercel.app/",
+    featured: false,
+    status: "Completed",
+    year: "2025"
   }
 ];
 
