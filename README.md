@@ -1,7 +1,5 @@
 # Bintang's Personal Portfolio Website
 
-![image](https://github.com/user-attachments/assets/f95d1709-efc8-4095-9d8f-0e9c9eacd422)
-
 ## ✨ About The Project
 
 Welcome to my personal portfolio! This project is a sleek and modern single-page application built with **React** and styled with **Tailwind CSS**. It's designed to be a comprehensive showcase of my skills, projects, and journey as a passionate IT student and developer. The portfolio features a clean, fully responsive layout with a user-friendly interface, ensuring a great experience on any device.
