@@ -104,7 +104,7 @@ const About = () => {
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                      <span className="text-sm text-gray-500 dark:text-gray-400">{skill.level}%</span>
+                      {/* <span className="text-sm text-gray-500 dark:text-gray-400">{skill.level}%</span> */}
                     </div>
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <div 
