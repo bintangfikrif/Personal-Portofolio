@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Bintang's Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Portfolio Screenshot](![image](https://github.com/user-attachments/assets/71cb1f71-378b-4e07-8d89-81981da2bd58)
+)](https://bintang-personal-portofolio.vercel.app/)
 
-## Available Scripts
+## ✨ About The Project
 
-In the project directory, you can run:
+Welcome to my personal portfolio! This project is a sleek and modern single-page application built with **React** and styled with **Tailwind CSS**. It's designed to be a comprehensive showcase of my skills, projects, and journey as a passionate IT student and developer. The portfolio features a clean, fully responsive layout with a user-friendly interface, ensuring a great experience on any device.
 
-### `npm start`
+### 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Check out the live version of the portfolio: **[bintang-personal-portofolio.vercel.app](https://bintang-personal-portofolio.vercel.app/)**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌟 Key Features
 
-### `npm test`
+* **Modern & Responsive Design:** A mobile-first design that looks great on all devices, from desktops to smartphones.
+* **Dark Mode:** A stylish dark mode toggle for comfortable viewing in different lighting conditions.
+* **Dynamic Project Showcase:** A filterable and searchable project gallery to easily explore my work by category or technology.
+* **Smooth Animations & Transitions:** Engaging user experience with subtle animations powered by Framer Motion.
+* **Interactive UI Components:** Built with reusable and modular components.
+* **Single-Page Application (SPA):** Seamless navigation between sections without page reloads.
+* **Downloadable CV:** A convenient button to download my latest CV directly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Built With
 
-### `npm run build`
+This project was built using a modern and robust tech stack:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **[React.js](https://reactjs.org/):** A powerful JavaScript library for building user interfaces.
+* **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
+* **[Framer Motion](https://www.framer.com/motion/):** For creating beautiful and smooth animations.
+* **[Lucide React](https://lucide.dev/):** A collection of clean and consistent icons.
+* **[PostCSS](https://postcss.org/):** A tool for transforming CSS with JavaScript.
+* **[Vercel](https://vercel.com/):** For seamless deployment and hosting.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running, follow these simple steps.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Make sure you have Node.js and npm installed on your machine.
+* npm
+    ```sh
+    npm install npm@latest -g
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1.  Clone the repo
+    ```sh
+    git clone [https://github.com/bintangfikrif/Personal-Portofolio.git](https://github.com/bintangfikrif/Personal-Portofolio.git)
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the App
 
-## Learn More
+* `npm start`
+    Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload when you make changes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* `npm run build`
+    Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 Project Structure
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is organized with a clear and scalable structure:
+```sh
+/src
+|-- /components     # Reusable UI components (Navbar, Footer, ProjectCard)
+|-- /data           # Project data and static content
+|-- /pages          # Main sections of the portfolio (Home, About, Projects, Contact)
+|-- App.jsx         # Main application component
+|-- index.css       # Global styles and Tailwind directives
+|-- main.jsx        # Entry point of the React application
+```
