@@ -1,13 +1,9 @@
 import React from 'react';
 import { 
   Code, 
-  Database, 
   Globe, 
-  Brain, 
-  Star, 
-  GitFork, 
+  Brain,  
   Eye,
-  Trophy,
   Calendar,
   MapPin,
   Heart
@@ -29,13 +25,6 @@ const About = () => {
     { category: 'AI/ML', icon: Brain, techs: ['TensorFlow', 'Scikit-learn', 'OpenCV'] },
     { category: 'UI/UX', icon: Eye, techs: ['Figma'] }
   ];
-
-  const githubStats = {
-    totalRepos: 42,
-    totalStars: 128,
-    totalForks: 35,
-    contributions: 847
-  };
 
   const interests = [
     { icon: Code, title: 'Front-End Web Development', description: 'Creating responsive and interactive web applications' },
