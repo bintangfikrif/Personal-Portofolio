@@ -1,7 +1,6 @@
 # Bintang's Personal Portfolio Website
 
-[![Portfolio Screenshot](![image](https://github.com/user-attachments/assets/71cb1f71-378b-4e07-8d89-81981da2bd58)
-)](https://bintang-personal-portofolio.vercel.app/)
+![image](https://github.com/user-attachments/assets/f95d1709-efc8-4095-9d8f-0e9c9eacd422)
 
 ## ✨ About The Project
 
