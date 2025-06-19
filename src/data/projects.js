@@ -18,7 +18,7 @@ export const projects = [
     description: "A dynamic and fully responsive personal portfolio built with React and Tailwind CSS. This single-page application smoothly scrolls through dedicated sections for an introduction, about me, projects, and contact information. It features a clean, modern design with a dark mode toggle, and showcases a filterable and searchable gallery of projects to highlight skills and experience in web development.",
     image: "project2.png",
     technologies: ["React", "Tailwind CSS", "Lucide", "Framer Motion", "Post CSS"],
-    category: "Web App",
+    category: "Web/App",
     githubUrl: "https://github.com/bintangfikrif/Personal-Portofolio",
     liveUrl: "https://bintang-personal-portofolio.vercel.app/",
     featured: true,
@@ -42,8 +42,8 @@ export const projects = [
     title: "Web Store App",
     description: "This is a ReactJS-based e-commerce web project that allows users to add items to the cart and proceed to checkout. Product data is retrieved from the Fake Store API.",
     image: "project4.png",
-    technologies: ["React", "Fake Store API", "Context API", "CSS"],
-    category: "Web App",
+    technologies: ["React", "React Router", "Fake Store API", "Context API", "CSS"],
+    category: "Web/App",
     githubUrl: "https://github.com/bintangfikrif/uts_pemrograman_web_122140008",
     liveUrl: "https://uts-pemrograman-web-122140008.vercel.app/",
     featured: false,
@@ -92,7 +92,7 @@ export const projects = [
     description: "Personal Book Management is a React-based web application design that enables users to log, organize, and track books they own, are currently reading, or plan to buy. The design features a clean and intuitive user interface, leveraging modern capabilities of React for a seamless experience.",
     image: "project8.png",
     technologies: ["React", "React Router", "CSS", "Context API"],
-    category: "Web App",
+    category: "Web/App",
     githubUrl: "https://github.com/bintangfikrif/pemrograman_web_itera_122140008/tree/main/Bintangfikrifauzan_122140008_pertemuan3",
     liveUrl: "https://aplikasi-manajemen-buku.vercel.app/",
     featured: false,
@@ -105,11 +105,23 @@ export const projects = [
     description: "Student Financial Tracker is a web application design created to help students manage their personal finances with ease. It allows users to record income and expenses, set monthly budgets, and view financial visualizations through charts to monitor their spending habits.",
     image: "project9.png",
     technologies: ["React", "React Router", "CSS", "Local Storage API"],
-    category: "Web App",
+    category: "Web/App",
     githubUrl: "https://github.com/bintangfikrif/pemrograman_web_itera_122140008/tree/main/Bintangfikrifauzan_122140008_pertemuan2/tugas",
     liveUrl: "https://tracker-keuangan.vercel.app/",
     featured: false,
     status: "Completed",
+    year: "2025"
+  },
+  {
+    id: 10,
+    title: "IT Management System App",
+    description: "A simple IT Management System Application made on Microsoft Power Platform submitted as an internship project at PT. Hutama Karya Infrastruktur",
+    image: "project10.png",
+    technologies: ["Microsoft Power Apps", "Microsoft Power Automate", "Microsoft Power BI"],
+    category: "Web/App",
+    githubUrl: "",
+    featured: false,
+    status: "In Progress",
     year: "2025"
   }
 ];
@@ -117,7 +129,7 @@ export const projects = [
 export const categories = [
   "All",
   "UI/UX",
-  "Web App",
+  "Web/App",
   "AI/ML",
   "Computer Vision",
   "Game"

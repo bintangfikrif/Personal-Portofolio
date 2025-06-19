@@ -26,7 +26,7 @@ const ProjectCard = ({ project, isDetailed = false }) => {
     switch (category) {
       case 'UI/UX':
         return 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300';
-      case 'Web App':
+      case 'Web/App':
         return 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300';
       case 'AI/ML':
         return 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300';
