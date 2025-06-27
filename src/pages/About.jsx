@@ -6,7 +6,8 @@ import {
   Eye,
   Calendar,
   MapPin,
-  Heart
+  Heart,
+  ChartColumn
 } from 'lucide-react';
 
 const About = () => {
@@ -22,7 +23,8 @@ const About = () => {
 
   const techStack = [
     { category: 'Frontend', icon: Globe, techs: ['HTML', 'React', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'AI/ML', icon: Brain, techs: ['TensorFlow', 'Scikit-learn', 'OpenCV'] },
+    { category: 'AI/ML', icon: Brain, techs: ['Scikit-learn', 'OpenCV'] },
+    { category: 'Data Analytics', icon: ChartColumn, techs: ['Power BI', 'Tableau'] },
     { category: 'UI/UX', icon: Eye, techs: ['Figma'] }
   ];
 
@@ -43,7 +45,7 @@ const About = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            A curious Informatics student passionate about AI, front-end development, and continuously learning through hands-on projects
+            A curious Informatics student passionate about AI, data analytics, and continuously learning through hands-on projects
           </p>
         </div>
 
@@ -52,7 +54,6 @@ const About = () => {
           <div className="flex justify-center">
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-xl w-full">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Heart className="w-6 h-6 text-red-500 mr-3" />
                 My Story
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
