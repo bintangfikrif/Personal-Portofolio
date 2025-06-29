@@ -6,7 +6,6 @@ import {
   Eye,
   Calendar,
   MapPin,
-  Heart,
   ChartColumn
 } from 'lucide-react';
 

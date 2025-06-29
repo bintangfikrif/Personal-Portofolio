@@ -29,7 +29,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection, scrollToSection }) =>
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Bintang's Portfolio Webpage
+            Bintang's Portofolio Webpage
           </div>
           
           {/* Desktop Navigation */}

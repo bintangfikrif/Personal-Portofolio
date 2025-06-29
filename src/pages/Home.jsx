@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ArrowDown, Code, Sparkles } from 'lucide-react';
+import { Code, Sparkles } from 'lucide-react';
 
 const Home = () => {
   const scrollToAbout = () => {
@@ -90,37 +90,6 @@ const Home = () => {
               className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105"
             >
               View My Work
-            </button>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
-            {[
-              { icon: Github, href: 'https://github.com/bintangfikrif', label: 'GitHub' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/bintang-fikri-fauzan-2436751b0/', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:bntngfkr@gmail.com', label: 'Email' }
-            ].map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                aria-label={label}
-              >
-                <Icon className="w-6 h-6" />
-              </a>
-            ))}
-          </div>
-
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <button
-              onClick={scrollToAbout}
-              className="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-              aria-label="Scroll to about section"
-            >
-              <ArrowDown className="w-6 h-6" />
             </button>
           </div>
         </div>
