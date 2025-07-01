@@ -13,11 +13,11 @@ const About = () => {
   const skills = [
     { name: 'Python', level: 80, color: 'bg-yellow-500' },
     { name: 'Figma', level: 80, color: 'bg-pink-500' },
-    { name: 'Git', level: 80, color: 'bg-orange-500' },
     { name: 'React', level: 75, color: 'bg-blue-500' },
     { name: 'C++', level: 70, color: 'bg-blue-600' },
-    { name: 'JavaScript', level: 55, color: 'bg-yellow-400' },
-    { name: 'AI/ML', level: 50, color: 'bg-purple-500' }
+    { name: 'Git', level: 65, color: 'bg-orange-500' },
+    { name: 'Power BI', level: 55, color: 'bg-yellow-400' },
+    { name: 'Javascript', level: 50, color: 'bg-purple-500' }
   ];
 
   const techStack = [

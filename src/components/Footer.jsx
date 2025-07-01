@@ -1,5 +1,4 @@
 import React from 'react';
-import { Github, Linkedin, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,44 +7,6 @@ const Footer = () => {
         {/* Left: Copyright */}
         <div className="text-gray-600 dark:text-gray-400 text-center md:text-left text-sm">
           &copy; {new Date().getFullYear()} Bintang Fikri Fauzan. All rights reserved.
-        </div>
-
-        {/* Center: Social Links */}
-        <div className="flex space-x-4">
-          <a
-            href="https://github.com/bintangfikrif"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300"
-          >
-            <Github className="w-5 h-5 text-gray-700 dark:text-gray-300" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bintang-fikri-fauzan-2436751b0/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300"
-          >
-            <Linkedin className="w-5 h-5 text-blue-700 dark:text-blue-400" />
-          </a>
-          <a
-            href="https://instagram.com/bintangfikrif"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-pink-100 dark:hover:bg-pink-900 transition-all duration-300"
-          >
-            <Instagram className="w-5 h-5 text-pink-600 dark:text-pink-400" />
-          </a>
-          <a
-            href="mailto:bntngfkr@gmail.com"
-            aria-label="Email"
-            className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-blue-100 dark:hover:bg-blue-900 transition-all duration-300"
-          >
-            <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-          </a>
         </div>
 
         {/* Right: Back to Top */}

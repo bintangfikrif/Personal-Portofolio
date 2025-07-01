@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { 
-  Mail, 
+  Mail,
+  Linkedin, 
+  Instagram, 
+  Github, 
   Send, 
   User, 
   MessageSquare,
@@ -133,6 +136,15 @@ const Contact = () => {
               </p>
             </div>
           )}
+        </div>
+
+        <div className="text-center mt-12">
+            <div className="flex justify-center space-x-6">
+                <a href="mailto:bntngfkr@gmail.com" className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><Mail size={40} /></a>
+                <a href="https://github.com/bintangfikrif" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors"><Github size={40} /></a>
+                <a href="https://www.linkedin.com/in/bintang-fikri-fauzan-2436751b0/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-blue-700 dark:hover:text-blue-500 transition-colors"><Linkedin size={40} /></a>
+                <a href="https://instagram.com/bintangfikrif" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"><Instagram size={40} /></a>
+            </div>
         </div>
 
       </div>
