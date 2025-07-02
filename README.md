@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This project is a sleek and modern single-page
 
 ### 🚀 Live Demo
 
-Check out the live version of the portfolio: **[bintang-personal-portofolio.vercel.app](https://bintang-personal-portofolio.vercel.app/)**
+Check out the live version of the portfolio: **[tanggs.vercel.app](https://tanggs.vercel.app)**
 
 ## 🌟 Key Features
 
