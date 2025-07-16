@@ -1,17 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import { Filter, Search, Grid, List } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
-import { projects, categories } from '../data/projects';
+import { categories } from '../data/projects'; 
+import { createClient } from 'contentful';
+
+const client = createClient({
+  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
+});
 
 const Projects = () => {
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [allProjects, setAllProjects] = useState([]);
+  const [filteredProjects, setFilteredProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
   const [viewMode, setViewMode] = useState('grid');
   const [sortBy, setSortBy] = useState('year');
 
   useEffect(() => {
-    let filtered = projects;
+    const fetchProjects = async () => {
+      setIsLoading(true);
+      try {
+        const response = await client.getEntries({ content_type: 'project' });
+      
+        const formattedProjects = response.items.map(item => ({
+          id: item.sys.id,
+          title: item.fields.title || 'No Title',
+          description: item.fields.description || 'No Description',
+          image: item.fields.image?.fields?.file?.url || 'default-image-url.jpg',
+          technologies: item.fields.technologies || [],
+          category: item.fields.category || 'Uncategorized',
+          githubUrl: item.fields.gitHubUrl || '', 
+          liveUrl: item.fields.liveUrl || '', 
+          featured: item.fields.featured || false,
+          status: item.fields.status || 'Completed',
+          year: item.fields.year || new Date().getFullYear(),
+        }));
+        
+        setAllProjects(formattedProjects);
+        setFilteredProjects(formattedProjects); 
+      } catch (error) {
+        console.error("Error fetching projects from Contentful:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
+  useEffect(() => {
+    let filtered = [...allProjects];
 
     // Filter by category
     if (selectedCategory !== 'All') {
@@ -51,7 +91,7 @@ const Projects = () => {
     });
 
     setFilteredProjects(filtered);
-  }, [selectedCategory, searchTerm, sortBy]);
+  }, [selectedCategory, searchTerm, sortBy, allProjects]);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
@@ -83,7 +123,7 @@ const Projects = () => {
 
         {/* Filters and Controls */}
         <div className="mb-12">
-          <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
+           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             {/* Search Bar */}
             <div className="relative flex-1 max-w-md">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
@@ -159,26 +199,26 @@ const Projects = () => {
         {/* Projects Count */}
         <div className="mb-8">
           <p className="text-gray-600 dark:text-gray-400">
-            Showing {filteredProjects.length} of {projects.length} projects
+            Showing {filteredProjects.length} of {allProjects.length} projects
             {selectedCategory !== 'All' && ` in ${selectedCategory}`}
             {searchTerm && ` matching "${searchTerm}"`}
           </p>
         </div>
 
         {/* Projects Grid/List */}
-        {filteredProjects.length > 0 ? (
+        {isLoading ? (
+          <div className="text-center text-xl">Loading Projects...</div>
+        ) : filteredProjects.length > 0 ? (
           <div className={`${
             viewMode === 'grid' 
               ? 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' 
               : 'space-y-8'
           }`}>
-            {filteredProjects.map((project) => (
+            {filteredProjects.map((project, index) => (
               <div
                 key={project.id}
-                className={`${
-                  viewMode === 'list' ? 'max-w-4xl mx-auto' : ''
-                } animate-fade-in`}
-                style={{ animationDelay: `${project.id * 0.1}s` }}
+                className="animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <ProjectCard 
                   project={project} 
