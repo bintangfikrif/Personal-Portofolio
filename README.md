@@ -28,6 +28,8 @@ This project was built using a modern and robust tech stack:
 * **[Lucide React](https://lucide.dev/):** A collection of clean and consistent icons.
 * **[PostCSS](https://postcss.org/):** A tool for transforming CSS with JavaScript.
 * **[Vercel](https://vercel.com/):** For seamless deployment and hosting.
+* **[Contentful](https://www.contentful.com/):** A Content Management System to manage project data.
+* **[EmailJS](https://www.emailjs.com/):** Sends contact form emails without backend.
 
 ## ⚙️ Getting Started
 
