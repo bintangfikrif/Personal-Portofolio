@@ -56,10 +56,6 @@ const Home = () => {
               </h3>
               <Sparkles className="w-6 h-6 text-purple-600" />
             </div>
-            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              Passionate about creating innovative web solutions and exploring the frontiers of 
-              <span className="text-blue-600 dark:text-blue-400 font-semibold"> Artificial Intelligence</span>.
-            </p>
           </div>
 
           {/* Tech Stack Pills */}

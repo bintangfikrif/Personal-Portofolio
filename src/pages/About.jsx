@@ -22,8 +22,8 @@ const About = () => {
 
   const techStack = [
     { category: 'Frontend', icon: Globe, techs: ['HTML', 'React', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'AI/ML', icon: Brain, techs: ['Scikit-learn', 'OpenCV'] },
-    { category: 'Data Analytics', icon: ChartColumn, techs: ['Power BI', 'Tableau'] },
+    { category: 'AI/ML', icon: Brain, techs: ['Scikit-learn', 'Pytorch', 'Tensorflow'] },
+    { category: 'Data Analytics', icon: ChartColumn, techs: ['Power BI', 'Tableau', 'Looker Studio'] },
     { category: 'UI/UX', icon: Eye, techs: ['Figma'] }
   ];
 
@@ -31,7 +31,7 @@ const About = () => {
     { icon: Code, title: 'Front-End Web Development', description: 'Creating responsive and interactive web applications' },
     { icon: Brain, title: 'Artificial Intelligence', description: 'Exploring machine learning and deep learning concepts' },
     { icon: Eye, title: 'UI/UX Design', description: 'Designing intuitive and visually appealing user interfaces' },
-    { icon: Globe, title: 'Open Source', description: 'Contributing to community projects and sharing knowledge' }
+    // { icon: Globe, title: 'Open Source', description: 'Contributing to community projects and sharing knowledge' }
   ];
 
   return (
@@ -43,9 +43,6 @@ const About = () => {
               About Me
             </span>
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            A curious Informatics student passionate about AI, data analytics, and continuously learning through hands-on projects
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16 justify-center items-center">
@@ -53,11 +50,11 @@ const About = () => {
           <div className="flex justify-center">
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 max-w-xl w-full">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                My Story
+                Get to Know Me
               </h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-400">
                 <p>
-                  Hi, I’m Bintang — an Informatics Engineering student at Institut Teknologi Sumatera.
+                  Hi I’m Bintang, an Informatics Engineering student at Institut Teknologi Sumatera.
                   I’m passionate about exploring how technology can solve real-world problems, especially
                   through the lens of Artificial Intelligence and Machine Learning.
                 </p>
@@ -86,14 +83,13 @@ const About = () => {
 
           {/* Skills */}
           <div className="space-y-8">
-            <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            {/* <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <h3 className="text-2xl font-bold mb-6">Technical Skills</h3>
               <div className="space-y-4">
                 {skills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-                      {/* <span className="text-sm text-gray-500 dark:text-gray-400">{skill.level}%</span> */}
                     </div>
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <div 
@@ -104,7 +100,7 @@ const About = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Tech Stack */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
@@ -136,19 +132,20 @@ const About = () => {
         {/* Interests */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center mb-12">What I'm Passionate About</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {interests.map((interest) => (
               <div
                 key={interest.title}
-                className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                // Tambahkan lebar maksimal (max-w) agar card tidak melebar terlalu besar di layar kecil
+                className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] max-w-sm"
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg mb-4">
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg mb-4 mx-auto">
                   <interest.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white">
+                <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-white text-center">
                   {interest.title}
                 </h4>
-                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 text-sm text-center">
                   {interest.description}
                 </p>
               </div>
